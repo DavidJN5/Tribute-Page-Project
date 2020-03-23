@@ -1,0 +1,113 @@
+body{
+	background-color: #809CB2;
+}
+
+h3, p:first-child{
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	background-color: #630037;
+	color: white;
+	border-radius: 10px;
+}
+
+.caption{
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	background-color: lightyellow;
+	border-radius: 10px;
+	border: 5px solid lightyellow;
+}
+
+.img{
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	display: block;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	border: 5px double black;
+	background-color: #630037;
+}
+
+.ichigo{
+	grid-area: i;
+}
+
+.ichigo-personality{
+	grid-area: ip;
+	
+	padding-left: 30px;
+}
+
+.asta{
+	grid-area: a;
+}
+
+.asta-personality{
+	grid-area: ap;
+	'
+	padding-left: 30px;
+}
+
+.fuegoleon{
+	grid-area: f;
+}
+
+.fuegoleon-personality{
+	grid-area: fp;
+	padding-left: 30px;
+}
+
+.crimson{
+	grid-area: c;
+}
+
+.crimson-personality{
+	grid-area: cp;
+	
+	padding-left: 30px;
+	
+}
+
+#title{
+	border-radius: 25px;
+	text-align: center;
+	background-color: rgb(0, 55, 99);
+	color: white; 
+	font-family: Sans-serif;
+	font-size: 80px;
+	height: 100px;
+	
+	grid-area: t;
+}
+
+#main{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(16,1fr);
+	
+	grid-template-areas:
+	"t t"
+	". ."
+	"i ip"
+	"i ip"
+	"i ip"
+	"a ap"
+	"a ap"
+	"a ap"
+	". ."
+	"f fp"
+	"f fp"
+	"f fp"
+	". ."
+	"c cp"
+	"c cp"
+	"c cp";
+}
+
+
